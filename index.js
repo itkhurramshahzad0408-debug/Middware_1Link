@@ -14,6 +14,11 @@ const TOKEN_URL = 'https://sandboxapi.1link.net.pk/uat-1link/sandbox/oauth2/toke
 // const RASST_URL = 'https://sandboxapi.1link.net.pk/uat-1link/sandbox/1Link';
 
 // Step 1: API endpoint for NetSuite
+
+app.get('/getnow', (req, res)=>{
+  console.log('get method');
+});
+
 app.post('/api/testLink1', async (req, res) => {
   try {
     console.log('Request from NetSuite:', req.body);
